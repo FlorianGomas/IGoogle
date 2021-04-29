@@ -1,0 +1,119 @@
+
+:root{
+  --main-bg-color :#198754 ;
+  --text-color : white;
+}
+.desk{
+    background-image:url('images/WoodenBackground.jpg');
+    height: 100vh;
+}
+
+.navbar-nav{
+    flex-direction: row;
+}
+
+li.nav-item{
+    margin: 0 13px;
+}
+
+p{
+    color: var(--text-color);
+}
+
+input{
+  margin-bottom: 8px;
+}
+  .dragWindow {
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+  }
+  
+  .btn-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .navbar {
+    background-color: var(--main-bg-color);
+  }
+
+  li.nav-item>a,.navbar-brand,.btn{
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+  .dragWindowHeader {
+    font-weight: bold;
+    padding: 10px;
+    cursor: move;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+  }
+
+  #dateheader>p {
+    font-size: 20px;
+}
+
+h3{
+  width:100%;
+}
+
+div.articles{
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img.articleImage{
+  object-fit: cover;
+  width : 100%;
+  height: 200px;
+}
+
+div.article{
+  position: relative;
+  margin: 0.2em;
+  width: 48%;
+}
+
+
+div.article:hover .articleImage{
+  opacity: 0.3;
+}
+
+div.article:hover .description{
+  display: block;
+  opacity: 1;
+}
+
+div.article>a>img+p{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--text-color);
+  display: none;
+}
+
+.top{
+  z-index : 2;
+}
+
+.bottom{
+  z-index:1;
+}
+
+#date{
+  width:250px;
+}
+
+#twitter{
+  width:330px;
+}
+
+.colorpicker{
+  z-index: 10000;
+}
