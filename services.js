@@ -1,6 +1,9 @@
 class Service {
+
+    constructor(){
     // Variable pour gestion positionnement des widgets à l'ouverture
-    posX=0;
+    this.posX = 0;
+    }
 
     //------ GESTION DE LA CREATION DES FENETRES WIDGET DRAGGABLE ------
     createWindow(name) {

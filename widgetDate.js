@@ -1,8 +1,7 @@
-class WidgetDate{
-
-    refreshTime = 1000; //Temps de rafraichissement de l'horloge en millisecondes
+class WidgetDate{   
 
     constructor(){
+        this.refreshTime = 1000; //Temps de rafraichissement de l'horloge en millisecondes
         setInterval(this.clockTime,this.refreshTime);
     }
 
