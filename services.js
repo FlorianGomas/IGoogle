@@ -5,12 +5,14 @@ class Service {
     //------ GESTION DE LA CREATION DES FENETRES WIDGET DRAGGABLE ------
     createWindow(name) {
         let window = $('<div class="dragWindow" id="' + name + '"><button type="button" class="btn-close" aria-label="Close"></button><div class="dragWindowHeader" id="' + name + 'header"><h2>' + name.toUpperCase() + '</h2></div></div>');
-        window.find(".btn-close").on("click", function () {
-            $(this).parent().remove();
-        });
+        let self = this;
         window.css("left", this.posX);
         $('.desk').append(window);
         this.posX = this.posX + window.outerWidth();
+        window.find(".btn-close").on("click", function () {
+            self.posX = self.posX - window.outerWidth();
+            $(this).parent().remove();
+        });
     }
 
     //------ GESTION DE LA CREATION DES INPUTS ------

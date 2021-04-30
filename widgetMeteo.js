@@ -16,7 +16,7 @@ class WidgetMeteo{
                             alert("Vous devez saisir le nom d'une ville !");
                             break;
                         case 615 : 
-                            alert("Votre requête à échoué, votre ville est peut être invalide.");
+                            alert("Votre requête a échoué, votre ville est peut être invalide.");
                             break;
                         default :
                             alert(data.error.info);
